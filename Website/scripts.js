@@ -1,5 +1,5 @@
 "use strict";
-const serverUrl = "http://127.0.0.1:8000"; // Use local API for testing
+const serverUrl = "https://85h3v0un1c.execute-api.us-east-1.amazonaws.com/api"; // Use local API for testing
 
 let extractedText = "";
 

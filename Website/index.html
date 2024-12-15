@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Textbook Translator</title>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-blue-grey.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <h1>Textbook Translator</h1>
+    </header>
+
+    <section class="upload-section">
+      <label for="file" class="file-label">Choose an image with text:</label>
+      <input id="file" type="file" name="file" accept="image/*" />
+      <button class="upload-button" onclick="uploadAndExtract()">Upload & Extract</button>
+    </section>
+
+    <section id="view" class="output-section" style="display: none;">
+      <div class="image-preview">
+        <h2>Uploaded Image</h2>
+        <img id="image" alt="Uploaded Image" />
+      </div>
+
+      <div class="text-display">
+        <h2>Extracted Text</h2>
+        <div id="extracted-text" class="text-box"></div>
+      </div>
+
+      <div class="translate-section">
+        <h2>Translate Text</h2>
+        <label for="language">Select Language:</label>
+        <select id="language" class="language-dropdown">
+          <option value="en">English</option>
+          <option value="es">Spanish</option>
+          <option value="fr">French</option>
+          <option value="de">German</option>
+        </select>
+        <button class="translate-button" onclick="translateText()">Translate</button>
+        <div id="translated-text" class="text-box"></div>
+      </div>
+    </section>
+  </div>
+
+  <script src="scripts.js"></script>
+</body>
+
+</html>
